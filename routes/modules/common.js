@@ -19,7 +19,7 @@ exports.getPaginationSql = function(sql, paginationObj) {
   
     /*  Step 1 Handle paginationObj parameter */
     var _skip = paginationObj.currentPage === undefined ? 0 : (paginationObj.currentPage - 1) * paginationObj.pageSize;
-    var _limit = paginationObj.prePage === undefined ? 20 : paginationObj.pageSize;
+    var _limit = paginationObj.pageSize === undefined ? 20 : paginationObj.pageSize;
   
     var dataSql;
     var cntSql;

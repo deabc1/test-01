@@ -11,7 +11,7 @@ function query(req,res){
 
     let pagination=body.paginationObj || {currentPage: 1, pageSize: 20, totals: 1000, maxSize: 5};
 
-    console.log('body',body);
+    console.log('body',body,pagination);
     
     let wherecl = '';
     let _searchcri = [ 
